@@ -2,24 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>SkillSync - Career Coach</title>
+    <title>SkillSync - Career Coach 🚀</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
 </head>
 <body>
-    <h1>SkillSync: Find Your Future</h1>
+    <h1>🔮 SkillSync: Find Your Future</h1>
 
     <form id="upload-form">
-        <label for="resume">Upload Your Resume (PDF or Image):</label><br>
+        <label for="resume">📄 Upload Your Resume (PDF or Image):</label><br>
         <input type="file" id="resume" name="resume" accept=".pdf, image/*"><br><br>
 
-        <label for="goals">Tell us your goals:</label><br>
-        <textarea id="goals" name="goals" rows="4" cols="50"></textarea><br><br>
+        <label for="goals">🎯 Tell us about your career goals:</label><br>
+        <textarea id="goals" name="goals" rows="4" cols="50" placeholder="e.g., I want to be a software engineer at a tech company..."></textarea><br><br>
 
-        <button type="button" id="recordButton">🎙️ Record Audio</button>
-        <button type="submit">Submit</button>
+        <button type="submit">✨ Find My Path</button>
     </form>
 
     <div id="career-results" style="margin-top: 40px;"></div>
+    <div id="progress-container" style="display: none; margin-top: 50px;">
+        <h2>🏆 Your Interview Readiness</h2>
+        <div class="progress-bar-outer">
+            <div class="progress-bar-inner" id="progress-bar-inner">
+                <span id="progress-text">0%</span>
+            </div>
+        </div>
+        <div id="progress-message" style="margin-top: 20px; font-size: 18px; font-weight: bold; color: #555;"></div>
+    
+    </div>
+    <div id="profile-page" style="display: none; margin-top: 60px;">
+        <h2>🌟 Your Journey</h2>
+
+        <div id="profile-strengths" style="margin-bottom: 30px;">
+            <h3>🎯 Strengths</h3>
+            <div id="strengths-list"></div>
+        </div>
+        <div id="profile-improvements" style="margin-bottom: 30px;">
+            <h3>📈 Things to Improve</h3>
+            <div id="improvements-list"></div> 
+        </div>
+        
+
+        <div id="profile-next-steps" style="margin-bottom: 30px;">
+            <h3>🚀 Career Next Steps</h3>
+            <div id="next-steps-list"></div>
+        </div>
+        <div id="profile-certifications" style="margin-bottom: 30px;">
+            <h3>🎓 Suggested Certifications</h3>
+            <div id="certifications-list"></div> 
+        </div>
+        <div id="skill-gap-section" style="margin-top: 50px;">
+            <h2>🧩 Skill Gap Analysis + Learning Plan</h2>
+            <button id="analyze-skill-gap-button" style="margin-top: 20px;">🔎 Analyze Skill Gaps + Build My 3-Month Plan</button>
+        
+            <div id="skill-gap-results" style="margin-top: 30px;"></div>
+        </div>
+        
+        
+
+       
+    </div>
+    
+    
 
     <script src="script.js"></script>
 </body>
