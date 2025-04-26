@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SkillSync - Career Coach</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>SkillSync: Find Your Future</h1>
+
+    <form id="upload-form">
+        <label for="resume">Upload Your Resume (PDF or Image):</label><br>
+        <input type="file" id="resume" name="resume" accept=".pdf, image/*"><br><br>
+
+        <label for="goals">Tell us your goals:</label><br>
+        <textarea id="goals" name="goals" rows="4" cols="50"></textarea><br><br>
+
+        <button type="button" id="recordButton">🎙️ Record Audio</button>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="career-results" style="margin-top: 40px;"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

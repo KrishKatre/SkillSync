@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    text-align: center;
+}
+
+form {
+    margin-top: 30px;
+}
+
+input, textarea {
+    width: 300px;
+}
+
+.career-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.career-card h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.career-card ul, .career-card ol {
+    padding-left: 20px;
+}
+.cover-letter-output {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    text-align: left;
+    display: block;
+}
+
+.chat-window {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #fafafa;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.chat-messages {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.message {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.message-icon {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.message-text {
+    background-color: #f1f1f1;
+    padding: 10px 15px;
+    border-radius: 12px;
+    max-width: 75%;
+}
+
+.interviewer-message .message-text {
+    background-color: #e0e0e0; /* light gray */
+    align-self: flex-start;
+}
+
+.user-message {
+    flex-direction: row-reverse;
+}
+
+.user-message .message-text {
+    background-color: #d1e7ff; /* light blue */
+    align-self: flex-end;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 8px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.send-answer-button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.send-answer-button:hover {
+    background-color: #45a049;
+}
+
+
