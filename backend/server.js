@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const multer = require('multer');
 const pdfParse = require('pdf-parse');
@@ -5,7 +7,8 @@ const fs = require('fs');
 
 const path = require('path');
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args)); // Quick fetch import
-const GEMINI_API_KEY = 'AIzaSyABBuv_SUBzLgSJVRLSf5e4b78TlEOnAT4';
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+
 
 const app = express();
 const PORT = 3000;
@@ -179,9 +182,9 @@ You are a professional interviewer for the role of ${career_name}.
 Start a mock technical interview based on the user's resume and the desired career path. 
 Ask one question at a time. Keep it realistic, open-ended, and relevant to the role.
 ONLY ask questions based on the candidate's resume skills, experiences, and interests described below.
-
+I REPEAT: ONLY ask questions related to the candidate's resume skills, experiences, and interests described below.
 DO NOT introduce random projects, certifications, or experiences that are not already present in the candidate's resume.
-
+I REPEAT: DO NOT introduce random projects, certifications, or experiences that are not already present in the candidate's resume.
 Focus on real-world, practical interview questions tailored to the candidate's existing background.
 
 Do not answer yourself — only ask questions.
