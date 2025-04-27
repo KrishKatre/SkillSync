@@ -39,3 +39,24 @@ Welcome to **SkillSync** — an AI-powered career exploration and preparation pl
 ```bash
 git clone https://github.com/your-username/skillsync.git
 cd skillsync
+```
+
+### 2. Install Backend Dependencies
+
+```bash
+npm install
+```
+
+### 3. Create .env file and put your gemini API key in it
+
+```bash
+GEMINI_API_KEY=your-gemini-api-key-here
+```
+
+### 4. Start the Server
+
+```bash
+node server/server.js
+```
+
+### 5. Open Browser and Visit http://localhost:3000
