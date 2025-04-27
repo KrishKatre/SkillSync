@@ -6,7 +6,7 @@ Welcome to **SkillSync** — an AI-powered career exploration and preparation pl
 ---
 
 ## 📸 Quick Demo
-🎥 [Insert YouTube link here]  
+🎥 https://youtu.be/mqJwukIOhx8
 *(3-min walkthrough showing functionality and tech stack)*
 
 ---
